@@ -3,6 +3,13 @@
     "apiRuntime": "node:18"
   },
   "navigationFallback": {
-    "rewrite": "/api/server"
-  }
+    "rewrite": "/index.html",
+    "exclude": ["/_next/*", "/api/*", "/*.{css,js,json,png,jpg,jpeg,gif,svg,ico,woff,woff2,ttf,eot}"]
+  },
+  "routes": [
+    {
+      "route": "/*",
+      "allowedRoles": ["anonymous"]
+    }
+  ]
 }
