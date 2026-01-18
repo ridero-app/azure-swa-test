@@ -14,7 +14,7 @@ export default async function TenantHome({ params }: { params: Promise<{ tenantI
         <h2>Test Multi-Tenant Navigation:</h2>
         <ul>
           <li><a href={`/${tenantId}/dashboard`}>Dashboard</a></li>
-          <parameter name="tenantId}/inventory`}>Inventory</a></li>
+          <li><a href={`/${tenantId}/inventory`}>Inventory</a></li>
         </ul>
       </div>
 
